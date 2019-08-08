@@ -1,0 +1,95 @@
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!--<script src="https://kit.fontawesome.com/b338df0901.js"></script>-->
+  <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet"  href="assets/images/styles.css">
+  <link rel="stylesheet" href="assets/images/carousel.css">
+  <title>Cart</title>
+  </head>
+  <body onload="render()">
+    <header>
+        <nav class="navbar  navbar-expand-md navbar-dark fixed-top bg-danger text-white">
+          <a class="text-white navbar-brand" href="#">
+            <i class="fab fa-pagelines"></i> Organic Store
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarCollapse" aria-controls="navbarCollapse"
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        
+        </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto menu">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+              <a class=" text-white nav-link" href="assets/images/cart.html">
+                <i class="material-icons">shopping_cart</i> Shopping Cart 
+                <i style="color: yellow" id="cart_n"></i>
+              </a>
+              
+
+              
+            </form>
+          </div>
+        </nav>
+      </header>
+      <br>
+      <div class="container mt-3">
+        <main role="main">
+          <div class="row">
+            <div class="col">
+              <div class="table-responsive-sm">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Product</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Price</th>
+
+                    </tr>
+                  </thead>
+                  <tbody id="table">
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="container">
+        <p class="float-right">
+          <a href="#">TOP</a>
+        </p>
+        <div class="row">
+          MY FIRST WEBSITE 
+        </div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <!----<script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-storage.js"></script>-->
+
+    <!----<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.33/dist/sweetalert2.all.min.js"></script>
+    <script src="assets/images/cart.js"></script>
+
+</body>
+</html>
